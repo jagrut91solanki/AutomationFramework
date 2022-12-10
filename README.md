@@ -74,7 +74,7 @@ Holds common methods to re-use in order to achieve maximum re-usability.
 * runmode decides whether to run test cases on local or Grid , grid Accepts yes or no.
 * if runmode is yes then user has to provide the remote url in remoteurl.
 * To delete old report data:
-* deleteoldreports - to select if tester wants to delete old reports. Accepts yes or no.
+   deleteoldreports - to select if tester wants to delete old reports. Accepts yes or no.
 * numberofdays - if yes than how old the files should be. Value in number of days.
 * overridereports to elect if tester want all reports to be merged in one i.e., current reports plus old ones or create new report for each test suite run. Accepts yes or no. Screenshots: *passedscreenshot - to take screenshot of passed test cases. Accepts yes or no. *retryfailedtestcasesto re-run fail test cases. Accepts yes or no. Not recommended setting to set it as yes.
 
