@@ -71,7 +71,7 @@ Holds common methods to re-use in order to achieve maximum re-usability.
 * environment where the test has to be performed.
 * testername inorder to keep track.
 * downloadwebdriver to decide if tester want to place the drivers or wants the framework to download it with the help of WebDriverManager.
-* runmode decides whether to run test cases on local, grid. Accepts yes or no.
+* runmode decides whether to run test cases on local or Grid , grid Accepts yes or no.
 * if runmode is yes then user has to provide the remote url in remoteurl.
 * To delete old report data:
 * deleteoldreports - to elect if tester wants to delete old reports. Accepts yes or no.
