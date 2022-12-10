@@ -2,17 +2,16 @@ package org.automation.listeners;
 
 import java.util.Arrays;
 import java.util.Base64;
+
 import org.automation.constants.GlobalVars;
-import org.automation.elk.ELKUtils;
 import org.automation.enums.ConfigMap;
 import org.automation.reports.ExtentLogger;
 import org.automation.reports.ExtentManager;
 import org.automation.reports.ExtentReport;
 import org.automation.testrecorder.TestRecording;
 import org.automation.utils.BrowserDetails;
-import org.automation.utils.PropertyUtils;
 import org.automation.utils.FileSystemHandler;
-import org.automation.utils.UserInputCheck;
+import org.automation.utils.PropertyUtils;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
