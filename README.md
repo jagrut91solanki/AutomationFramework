@@ -77,3 +77,9 @@ Holds common methods to re-use in order to achieve maximum re-usability.
 * deleteoldreports - to elect if tester wants to delete old reports. Accepts yes or no.
 * numberofdays - if yes than how old the files should be. Value in number of days.
 * overridereports to elect if tester want all reports to be merged in one i.e., current reports plus old ones or create new report for each test suite run. Accepts yes or no. Screenshots: *passedscreenshot - to take screenshot of passed test cases. Accepts yes or no. *retryfailedtestcasesto re-run fail test cases. Accepts yes or no. Not recommended setting to set it as yes.
+
+## Execution ##
+
+
+https://user-images.githubusercontent.com/38151216/206831845-a80a69f9-70c4-49e0-b909-370625f9d269.mp4
+
