@@ -51,7 +51,7 @@ Below are the component details of the framework:
       
  * Test Scripts
  
- TestNg is used as a test framework in order to generate test script taking into account the Page Object Model design pattern.
+ TestNg is used as a test framework in order to generate test script.
  
 * Build Tool
 
