@@ -15,7 +15,7 @@ These instructions assume you are using Eclipse.
 
 On the command line: Clone the project from git.
 
-git clone https://github.com/jagrut91solanki/AmazonAutomation.git
+git clone https://github.com/jagrut91solanki/AutomationFramework.git
 
 1. Open Eclipse
 2. File -> Open Projects from File system...
