@@ -59,10 +59,7 @@ Using maven, project dependencies are managed. Test can be run using pom.xml and
 
 * Reporting
 
-Generates html report automatically by using Extent Report . By attaching screenshots and execution of the failed test cases.
-However, user can set the framework to take screenshots of passed or/and skipped test cases. All reports are generated in surefire-reports/AmazonTest folder. Report automatically opens in default browser.
-Note: Exception logs and fail reasons are added to the report as well.
-On Test Starts Old Reports will automatically Deleted 
+Reporting Generates html report automatically by using Extent Report 5. By attaching screenshots and execution videos of the failed test cases. However, user can set the framework to take screenshots and videos of passed or/and skipped test cases. All reports are generated in reports-test-output folder. Report automatically opens in default browser. Note: Exception logs and fail reasons are added to the report as well. All images are in Base64 and videos in mp4.
 
 * Utilities
 
