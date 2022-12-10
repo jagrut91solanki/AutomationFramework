@@ -48,7 +48,7 @@ public class Listener implements ITestListener, ISuiteListener {
 				Base64.getDecoder().decode(PropertyUtils.get(ConfigMap.EMAILPASSWORD));
 			}
 		} catch (Exception e) {
-			UserInputCheck.designerOutputForPasswordError();
+			//UserInputCheck.designerOutputForPasswordError();
 			System.exit(1);
 		}
 		FileSystemHandler.deleteOldReports();
@@ -58,7 +58,7 @@ public class Listener implements ITestListener, ISuiteListener {
 
 	public void onFinish(ISuite suite) {
 		ExtentReport.flushReport();
-		UserInputCheck.sendTestReportOnEmail();
+		//UserInputCheck.sendTestReportOnEmail();
 	}
 
 	public void onTestStart(ITestResult result) {
@@ -73,8 +73,11 @@ public class Listener implements ITestListener, ISuiteListener {
 				+ (result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName())
 				+ "<br/>" + (result.getClass()).toString().replace("class", "Class: ") + "<br/>" + "Method: "
 				+ result.getMethod().getMethodName() + "<br/> Status: Pass");
-		ELKUtils.sendDetailsToELK(
-				result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName(), "Pass");
+		/*
+		 * ELKUtils.sendDetailsToELK(
+		 * result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.
+		 * class).testName(), "Pass");
+		 */
 	}
 
 	/** 
@@ -90,8 +93,11 @@ public class Listener implements ITestListener, ISuiteListener {
 
 		ExtentLogger.info("<video width='620' height='340' controls> <source src='" + TestRecording.getRecording()
 				+ "' type='video/mp4'> <videos>");
-		ELKUtils.sendDetailsToELK(
-				result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName(), "Fail");
+		/*
+		 * ELKUtils.sendDetailsToELK(
+		 * result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.
+		 * class).testName(), "Fail");
+		 */
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -101,8 +107,11 @@ public class Listener implements ITestListener, ISuiteListener {
 				+ result.getMethod().getMethodName() + "<br/> Status: Skip");
 		ExtentLogger.info("<video width='620' height='340' controls> <source src='" + TestRecording.getRecording()
 				+ "' type='video/mp4'> <videos>");
-		ELKUtils.sendDetailsToELK(
-				result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName(), "Skip");
+		/*
+		 * ELKUtils.sendDetailsToELK(
+		 * result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.
+		 * class).testName(), "Skip");
+		 */
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
